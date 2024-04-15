@@ -27,8 +27,8 @@ main #banner {
 }
 main #banner .banner-image {
   border-radius: 50%;
-  max-width: 300px;
-  height: 300px;
+  max-width: 200px;
+  height: 200px;
   margin-top: 70px;
 }
 .banner-content{
@@ -137,6 +137,9 @@ h2{
 .content-postum{
   width: 70%;
   margin: 0 auto;
+}
+.content-postum img{
+  margin-bottom: 25px;
 }
 #ofilme{
   margin-bottom: 10%;
