@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+#banner{
+  background-image: url(img/banner-topo.png);
+  background-size: cover; /* Para cobrir todo o elemento */
+  background-position: center; /* Para centralizar a imagem */
+  /* Outros estilos opcionais */
+  color: white; /* Cor do texto */
+  padding: 50px; /* Espaçamento interno */
+}
+main #banner {
+  /*  background-image: url("img/augusto02.jpg");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+main #banner .banner-image {
+  border-radius: 50%;
+  max-width: 300px;
+  height: 300px;
+  margin-top: 70px;
+}
+.banner-content{
+  padding: 5%;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Heebo";
+}
+body {
+  background-color: #f7f7f7;
+}
+header {
+  background-color: #ffffff;
+  height: 80px;
+  font-weight: 600;
+}
+header #navbar {
+  display: flex;
+  padding: 0 2rem; /* 2 rem é 32 px*/
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+header #navbar .nav-brand {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(92, 92, 92);
+}
+header #navbar .nav-list {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  gap: 2em;
+}
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+}
+header #navbar .nav-list .nav-item a:hover {
+  color: #a0a0a0;
+  transition: 0.5s;
+}
+header #navbar .hamburger-menu {
+  display: none;
+}
+section .posts-cards .post-card p{
+  font-size: 1.3rem;
+  color: #747474;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.container p{
+  font-size: 1.8rem;
+  color: #666565;
+}
+.container img{
+  width: 60%;
+}
+.container .content-postum h2{
+  font-size: 3em;
+  font-weight: 800;
+  color: #333;
+  margin-top: 8%;
+}
+@media (max-width: 920px) {
+  header #navbar .hamburger-menu {
+    display: block;
+  }
+  header #navbar .nav-list {
+    display: none;
+  }
+}
+
+/* Section banner*/
+main {
+
+}
+
+
+main #banner .banner-content .banner-content-title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+main #banner .banner-content .banner-content-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 500px;
+  margin-bottom: 38px;
+}
+main #banner .banner-content .banner-content-btn {
+  background-color: #19bda1;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 8px 24px;
+  border: none;
+}
+/* Video post um trailer o menino e a garça */
+/* .postum{
+  display: flex;
+  justify-content: center;
+} */
+.postum video{
+  
+  width: 70%;
+
+}
+.postum{
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  main #banner .banner-content {
+    text-align: center;
+  }
+  main #banner .banner-content .banner-content-subtitle {
+    margin: 0 auto;
+    margin-bottom: 38px;
+    gap: 2rem;
+  }
+  main #banner .banner-image {
+    border-radius: 50%;
+    max-width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    background-color: #f5f5f5;
+  }
+  .postum video{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+/* Secao de posts*/
+section#posts {
+  margin-top: 71px;
+  background-color: #ccfcf4;
+}
+#posts .posts-content {
+  max-width: 1100px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+#posts .posts-content .post-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+#posts .posts-content .post-content-header .section-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+#posts .posts-content .post-content-header .view-all-link {
+  text-decoration: none;
+  color: #19bda1;
+}
+#posts .posts-content .posts-cards {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 30px;
+}
+#posts .posts-content .post-card {
+  background-color: #fff;
+  padding: 24px;
+}
+#posts .posts-content .post-card h3 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 37px;
+}
+#posts .posts-content .post-card span {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  display: block;
+}
+@media (max-width: 720px) {
+  #posts .posts-content .posts-cards {
+    flex-direction: column;
+  }
+}
+.paragrafo-um {
+  font-size: 23rem;
+  background-color: #19bda1;
+}

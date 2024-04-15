@@ -1,0 +1,11 @@
+.item {
+  width: 70%;
+  height: 50%;
+  background-color: aqua;
+  justify-content: space-around;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  flex: 2;
+}
