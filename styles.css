@@ -6,6 +6,7 @@
 :root {
   font-size: 62.5%;
 }
+
 #banner{
   background-image: url(img/banner-topo.png);
   background-size: cover; /* Para cobrir todo o elemento */
@@ -82,13 +83,43 @@ header #navbar .nav-list .nav-item a:hover {
 header #navbar .hamburger-menu {
   display: none;
 }
+section .posts-cards .post-card{
+  width: 50%;
+}
 section .posts-cards .post-card p{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #747474;
+
+}
+section .posts-cards .post-card h3{
+  color: #636363;
 }
 .container{
-  width: 80%;
+  width: 97%;
   margin: 0 auto;
+}
+
+.capa-durara img{
+  width: 200px;
+}
+/* Player durarara*/
+/* Estilos para o player de áudio */
+
+
+/* Fim player Durarara */
+.container h2{
+  font-size: 3em;
+  font-weight: 800;
+  color: #333;
+}
+h2{
+
+  display: flex;
+  margin: 0 auto;
+  font-size: 3em;
+  font-weight: 800;
+  color: #333;
+  justify-content: center;
 }
 .container p{
   font-size: 1.8rem;
@@ -103,6 +134,86 @@ section .posts-cards .post-card p{
   color: #333;
   margin-top: 8%;
 }
+.content-postum{
+  width: 70%;
+  margin: 0 auto;
+}
+#ofilme{
+  margin-bottom: 10%;
+}
+/* FOOTER */
+/* CSS */
+.rodape {
+  background-color: #19bda1;
+  color: #fff;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+
+.rodape-conteudo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 20%;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.informacoes ul,
+.redes-sociais ul {
+  list-style: none;
+  padding: 0;
+}
+
+.redes-sociais ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.redes-sociais ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.redes-sociais ul li a:hover {
+  color: #ff6600; /* Altere para a cor desejada */
+}
+.oscar img{
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+}
+.container h2{
+  width: 80%;
+}
+.oscar h2{
+  display: flex;
+  margin: 0 auto;
+}
+.oscar-p{
+  
+  width: 70%;
+  margin: 0 auto;
+}
+.container .oscar-p{
+  margin-top: 40px;
+}
+.creditos {
+  text-align: center;
+  margin-top: 10px; /* Adicionando espaço extra entre o conteúdo e os créditos */
+}
+.banner-content-btn {
+  text-decoration: none; /* Remove o sublinhado */
+}
+.banner-content-btn:hover {
+  background-color: #0e9b83;
+}
+
+/* FIM FOOTER */
 @media (max-width: 920px) {
   header #navbar .hamburger-menu {
     display: block;
@@ -113,10 +224,6 @@ section .posts-cards .post-card p{
 }
 
 /* Section banner*/
-main {
-
-}
-
 
 main #banner .banner-content .banner-content-title {
   font-size: 44px;
@@ -140,11 +247,15 @@ main #banner .banner-content .banner-content-btn {
   padding: 8px 24px;
   border: none;
 }
+main #banner .banner-content .banner-content-btn:hover{
+  background-color: #0c967f;
+}
 /* Video post um trailer o menino e a garça */
-/* .postum{
+.postum{
   display: flex;
   justify-content: center;
-} */
+  
+}
 .postum video{
   
   width: 70%;
@@ -154,6 +265,7 @@ main #banner .banner-content .banner-content-btn {
   display: flex;
   justify-content: center;
 }
+
 @media screen and (max-width: 920px) {
   main #banner {
     flex-direction: column-reverse;
@@ -174,14 +286,43 @@ main #banner .banner-content .banner-content-btn {
     height: 200px;
   }
 }
+@media (max-width: 768px) {
+  #banner {
+    /* Nova imagem de fundo para dispositivos móveis */
+    background-image: url(img/banner2.png);
+    padding: 20px; /* Espaçamento interno para dispositivos móveis */
+  }
+}
 @media screen and (max-width: 700px) {
   body {
     background-color: #f5f5f5;
   }
+
   .postum video{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 99%;
+  }
+  main #banner .banner-content .banner-content-title {
+    font-size:25px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  .container p{
+    font-size: 1.5em;
+    margin: 0 auto;
+  }
+  .oscar-p{
+    width: 98%;
+    margin: 0 auto;
+  }
+  .container .oscar-p{
+    margin-top: 40px;
+  }
+  .content-postum{
+    width: 98%;
+    margin: 0 auto;
   }
 }
 /* Secao de posts*/
@@ -191,12 +332,12 @@ section#posts {
 }
 #posts .posts-content {
   max-width: 1100px;
-  padding: 0 2rem;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 #posts .posts-content .post-content-header {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 2rem 0;
 }
@@ -215,7 +356,9 @@ section#posts {
 }
 #posts .posts-content .post-card {
   background-color: #fff;
-  padding: 24px;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 #posts .posts-content .post-card h3 {
   font-size: 26px;
@@ -228,10 +371,20 @@ section#posts {
   margin-bottom: 24px;
   display: block;
 }
+.posts{
+  margin: 20px;
+}
 @media (max-width: 720px) {
   #posts .posts-content .posts-cards {
     flex-direction: column;
+    
   }
+  .container .postum{
+   
+    margin: 0 auto;
+  
+  }
+  
 }
 .paragrafo-um {
   font-size: 23rem;
